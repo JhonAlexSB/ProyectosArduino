@@ -1,0 +1,46 @@
+Video Streaming reconocimiento facial con ESP32-CAM IDE de Arduino - LCSC.COM
+  https://www.youtube.com/watch?v=NggC5XYyc7A
+
+** Adicionar libreria
+Archivo -> Preferencias -> {icono} Gestor de urls adicionales de tarjetas, 
+  https://dl.espressif.com/dl/package_esp32_index.json
+
+
+** Descargar librerias
+Herramientas -> Placa -> Gestor de tarjetas -> Buscamos "Esp32cam"
+
+** Seleccionar libreria
+Herramientas -> Placa -> Esp32 Wrover module
+
+** Configuraciones
+  Partition Scheme "Huge app (3mb No OTA)"
+  Puerto
+
+** Cargar ejemplo
+  Archivo -> Ejemplos -> ESP32 -> Camera -> CameraWebServer
+
+
+ESP32-CAM con ESP32-CAM-MB
+  https://www.youtube.com/watch?v=7Fai1UbmZd8
+
+
+
+** Descargar librerias
+Herramientas -> Placa -> Gestor de tarjetas -> Buscamos "Esp32cam"
+
+** Seleccionar libreria
+Herramientas -> Placa -> AI Thinker Esp32-CAM
+
+** Cargar ejemplo
+  Archivo -> Ejemplos -> ESP32 -> Camera -> CameraWebServer
+
+
+
+
+** listar puertos serie utilizados
+
+dmesg | grep tty
+setserial -g /dev/ttyS*
+
+apt update; apt upgrade
+
