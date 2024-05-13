@@ -1,3 +1,11 @@
+https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing#linux
+
+sudo add-apt-repository universe
+sudo apt install libfuse2
+
+/etc/udev/rules.d/99-arduino.rules
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="2341", GROUP="plugdev", MODE="0666"
+
 add "dialout" group
 https://arduino.stackexchange.com/questions/74714/arduino-dev-ttyusb0-permission-denied-even-when-user-added-to-group-dialout-o
 
